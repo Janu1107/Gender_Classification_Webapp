@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender Identification</title>
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: sans-serif;
+        }
+        center {
+            margin-top: 50px;
+        }
+        h1, h3 {
+            color: navy;
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        b {
+            font-weight: bold;
+        }
+        br {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Gender Identification</h1><br>
+        <h3> Insert the details about Yourself</h3><br>
+        <form method="POST" action="{{url_for('home')}}">
+            <b>
+                Do you have long hair (Yes:1, No:0) :
+                <input type="text" name='a' placeholder="enter 1 or 0"><br><br>
+                Enter the width of your forehead (cm) :
+                <input type="text" name='b' placeholder="enter width in cm"><br><br>
+                Enter the height of your forehead (cm) :
+                <input type="text" name='c' placeholder="enter height in cm"><br><br>
+                Is your nose wide (Yes:1, No:0) :
+                <input type="text" name='d' placeholder="enter 1 or 0"><br><br>
+                Is your nose long (Yes:1, No:0) :
+                <input type="text" name='e' placeholder="enter 1 or 0"><br><br>
+                Are your lips thin (Yes:1, No:0) :
+                <input type="text" name='f' placeholder="enter 1 or 0"><br><br>
+                Distance from nose to lip is long (Yes:1, No:0) :
+                <input type="text" name='g' placeholder="enter 1 or 0"><br><br><br>
+            </b>
+            <input type="submit" value='Predict'>
+        </form>
+    </center>
+</body>
+</html>
