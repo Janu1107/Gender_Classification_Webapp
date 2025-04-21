@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender Identification Result</title>
+    <style>
+        body {
+            background-color: powderblue; /* Or any background you prefer */
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        center {
+            text-align: center;
+        }
+        h1 {
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+        .female {
+            background-color: rgb(6, 20, 12);
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #9d9da3;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+   <center>
+        <h1>  Gender Identification :  </h1>
+
+    {%if data == 0%}
+
+    <h1 style="background-color:MediumSeaGreen;">Female</h1>
+
+
+    {%else%}
+    <h1 style="background-color:Tomato;">Male</h1>
+
+    {%endif%}
+
+        <br><br>
+    <a href='/'>Home Page</a>
+
+    </center>
+</body>
+</html>
